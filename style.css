@@ -942,11 +942,11 @@ h1 {
   }
 
   .nav-links {
-    display: none; /* Ховаємо текстові посилання на мобільних, щоб не захаращувати шапку */
+    display: none; 
   }
 
   .lang-switch {
-    margin-left: auto; /* Залишаємо тільки перемикач мов EN | IT у правому кутку */
+    margin-left: auto;  
     padding-left: 0;
     border-left: none;
   }

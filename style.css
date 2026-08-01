@@ -1,6 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400&family=Inter:wght@300;400;500;600&display=swap');
 
-/* --- Impostazioni di base --- */
 * {
   margin: 0;
   padding: 0;
@@ -14,7 +13,6 @@ body {
   overflow-x: hidden;
 }
 
-/* --- Stili per l'header del sito --- */
 .main-header {
   position: fixed !important;
   top: 0;
@@ -89,7 +87,6 @@ body {
   transform: translateX(-50%) scaleX(1);
 }
 
-/* --- Pulsante cambio lingua --- */
 .lang-switch {
   display: flex;
   align-items: center;
@@ -131,7 +128,6 @@ body {
   line-height: 1;
 }
 
-/* --- Sezione 1: Hero --- */
 .hero-section {
   display: flex;
   height: 100vh;
@@ -147,25 +143,25 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  padding: 0 5% 0 5%; 
+  padding: 0 5% 0 5%;
   position: relative;
   z-index: 2;
 }
 
 h1 {
   font-family: 'Cormorant Garamond', serif;
-  font-size: 5.5rem; 
+  font-size: 5.2rem;
   font-weight: 400;
   color: #58181A;
   line-height: 1.02;
-  letter-spacing: 5px;
+  letter-spacing: 4px;
   margin-bottom: 1.8rem;
 }
 
 .hero-subtitle {
   font-family: 'Cormorant Garamond', serif;
   font-style: italic;
-  font-size: 1.4rem; 
+  font-size: 1.35rem;
   color: #4A3E3D;
   margin-bottom: 2.8rem;
   line-height: 1.5;
@@ -192,7 +188,7 @@ h1 {
 }
 
 .hero-image {
-  width: 52%;
+  width: 50%;
   background-image: 
     linear-gradient(to bottom, rgba(253, 251, 247, 0) 70%, #FDFBF7 100%), 
     url('https://images.unsplash.com/photo-1560493676-04071c5f467b?auto=format&fit=crop&w=1200&q=80');
@@ -203,7 +199,7 @@ h1 {
 .scroll-indicator {
   position: absolute;
   bottom: 40px;
-  left: 8%;
+  left: 5%;
   display: flex;
   align-items: center;
   gap: 15px;
@@ -222,7 +218,6 @@ h1 {
   background-color: #C5A059;
 }
 
-/* --- Sezione 2: About --- */
 .about-section {
   display: flex;
   min-height: 100vh;
@@ -313,7 +308,6 @@ h1 {
   color: #58181A;
 }
 
-/* --- Sezione 3: Iniziative --- */
 .initiatives-section {
   background-color: #FDFBF7;
   padding: 140px 10%;
@@ -380,7 +374,6 @@ h1 {
   opacity: 0.95;
 }
 
-/* --- Sezione Ospitalità --- */
 .hospitality-section {
   background-color: #FDFBF7;
   padding: 100px 10%;
@@ -470,7 +463,6 @@ h1 {
   box-shadow: 0 10px 40px rgba(74, 62, 61, 0.05);
 }
 
-/* --- Sezione Prodotti --- */
 .products-section {
   background-color: #FDFBF7;
   padding: 60px 10%;
@@ -670,7 +662,6 @@ h1 {
   color: #4A3E3D;
 }
 
-/* --- Sezione ESG --- */
 .esg-section {
   background-color: #FDFBF7;
   padding: 100px 10%;
@@ -830,7 +821,6 @@ h1 {
   font-weight: 500;
 }
 
-/* --- Footer --- */
 .main-footer {
   background-color: #FDFBF7;
   padding: 60px 10% 40px 10%;
@@ -889,7 +879,6 @@ h1 {
   text-align: right;
 }
 
-/* --- Back to top --- */
 .back-to-top {
   position: fixed;
   bottom: 35px;
@@ -921,10 +910,6 @@ h1 {
   color: #FDFBF7;
   transform: translateY(-3px);
 }
-
-/* ==========================================
-   Adattabilità per smartphone e tablet
-   ========================================== */
 
 @media (max-width: 991px) {
   .main-header {

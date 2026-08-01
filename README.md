@@ -54,7 +54,6 @@ terre-di-giorgio/
 ├── favicon.png                          # Custom estate falcon icon
 ├── ESG Report 2026 - Terre di Giorgio.pdf  # Downloadable PDF report
 └── README.md                            # Project documentation
-
 ```
 
 ---

@@ -59,5 +59,5 @@ terre-di-giorgio/
 
 ## 📌 Author
 
-Developed by **[s1rk0o](https://github.com/s1rk0o)**  
+Developed by **[Sergiy "s1rk0o" Tepchuk](https://github.com/s1rk0o)**  
 📍 *Val d'Orcia, Tuscany, Italy*

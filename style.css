@@ -26,22 +26,17 @@ body {
   align-items: center !important;
   padding: 0 4%;
   z-index: 1000;
-  
-  /* Stato iniziale in alto: completamente trasparente */
   background: transparent;
   backdrop-filter: blur(0px);
   border-bottom: 1px solid transparent;
-  
-  /* Transizione fluida per colore e sfocatura */
   transition: all 0.4s ease;
 }
 
-/* Classe aggiunta automaticamente allo scroll */
 .main-header.scrolled {
-  background: rgba(253, 251, 247, 0.9) !important;
+  background: rgba(253, 251, 247, 0.95) !important;
   backdrop-filter: blur(10px) !important;
   border-bottom: 1px solid rgba(74, 62, 61, 0.08) !important;
-  height: 75px !important; /* Riduzione elegante dell'altezza dell'header */
+  height: 70px !important;
   box-shadow: 0 4px 20px rgba(74, 62, 61, 0.03);
 }
 
@@ -156,6 +151,7 @@ body {
   justify-content: center;
   padding: 0 5% 0 10%;
   position: relative;
+  z-index: 2;
 }
 
 h1 {
@@ -227,7 +223,7 @@ h1 {
   background-color: #C5A059;
 }
 
-/* --- Sezione 2: About / Chi siamo --- */
+/* --- Sezione 2: About --- */
 .about-section {
   display: flex;
   min-height: 100vh;
@@ -436,14 +432,14 @@ h1 {
 .hospitality-amenities {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  gap: 15px 20px; /* Ridotto il gap verticale da 25px a 15px */
-  margin-top: 1.8rem; /* Ridotto il margine superiore dal testo */
+  gap: 15px 20px;
+  margin-top: 1.8rem;
   border-top: 1px solid rgba(74, 62, 61, 0.1);
-  padding-top: 1.2rem; /* Ridotto il padding interno dalla linea */
+  padding-top: 1.2rem;
 }
 
 .amenity-item {
-  font-size: 0.75rem; /* Dimensione del testo leggermente ridotta */
+  font-size: 0.75rem;
   text-transform: uppercase;
   letter-spacing: 1px;
   color: #4A3E3D;
@@ -453,7 +449,7 @@ h1 {
 .amenity-item span {
   display: block;
   font-family: 'Cormorant Garamond', serif;
-  font-size: 1.4rem; /* Dimensione dei numeri ridotta da 2rem a 1.4rem */
+  font-size: 1.4rem;
   color: #C5A059;
   margin-bottom: 2px;
   font-weight: 600;
@@ -475,25 +471,25 @@ h1 {
   box-shadow: 0 10px 40px rgba(74, 62, 61, 0.05);
 }
 
-/* --- Sezione Prodotti (Layout compatto) --- */
+/* --- Sezione Prodotti --- */
 .products-section {
   background-color: #FDFBF7;
-  padding: 60px 10%; /* Ridotti i padding superiori e inferiori */
+  padding: 60px 10%;
   width: 100vw;
 }
 
 .products-main-title {
   font-family: 'Cormorant Garamond', serif;
-  font-size: 2.5rem; /* Titolo più compatto */
+  font-size: 2.5rem;
   font-weight: 400;
   color: #58181A;
-  margin-bottom: 2rem; /* Ridotto il margine inferiore da 4rem a 2rem */
+  margin-bottom: 2rem;
 }
 
 .products-showcase {
   display: flex;
   flex-direction: column;
-  gap: 20px; /* Spazio minimo tra i blocchi prodotto */
+  gap: 20px;
 }
 
 .product-row {
@@ -501,7 +497,7 @@ h1 {
   align-items: center;
   justify-content: space-between;
   gap: 5%;
-  padding: 25px 4%; /* Ridotto il padding interno da 50px a 25px */
+  padding: 25px 4%;
   margin: 0 -4%;
   border-radius: 6px;
   transition: background-color 0.3s ease;
@@ -519,10 +515,9 @@ h1 {
   background-color: #FDFBF7; 
 }
 
-/* Box grafico compatto */
 .product-graphic-box {
-  width: 32%; /* Ridotta la larghezza da 38% a 32% */
-  height: 270px; /* Ridotta l'altezza da 380px a 270px */
+  width: 32%;
+  height: 270px;
   background-color: #F5F1EA;
   display: flex;
   flex-direction: column;
@@ -534,11 +529,10 @@ h1 {
   box-shadow: 0 4px 15px rgba(74, 62, 61, 0.02);
 }
 
-/* Silhouette di bottiglie e barattoli ridotte proporzionalmente */
 .bottle-art, .tin-art, .jar-art {
   position: relative;
   transition: transform 0.4s ease;
-  transform: scale(0.85); /* Riduce delicatamente le silhouette del 15% */
+  transform: scale(0.85);
 }
 
 .bottle-art.calus-red {
@@ -637,7 +631,7 @@ h1 {
 }
 
 .product-details {
-  width: 62%; /* Aumentata la larghezza riservata al testo */
+  width: 62%;
 }
 
 .product-type {
@@ -651,14 +645,14 @@ h1 {
 
 .product-details h2 {
   font-family: 'Cormorant Garamond', serif;
-  font-size: 2rem; /* Ridotto il titolo del prodotto da 2.5rem a 2rem */
+  font-size: 2rem;
   font-weight: 400;
   color: #58181A;
   margin-bottom: 0.8rem;
 }
 
 .product-description {
-  font-size: 0.88rem; /* Font della descrizione più compatto */
+  font-size: 0.88rem;
   line-height: 1.6;
   color: #4A3E3D;
   margin-bottom: 1rem;
@@ -677,7 +671,7 @@ h1 {
   color: #4A3E3D;
 }
 
-/* --- Sezione Metriche ESG --- */
+/* --- Sezione ESG --- */
 .esg-section {
   background-color: #FDFBF7;
   padding: 100px 10%;
@@ -896,68 +890,7 @@ h1 {
   text-align: right;
 }
 
-/* --- Media Queries per dispositivi mobili --- */
-@media (max-width: 991px) {
-  .initiatives-grid {
-    grid-template-columns: 1fr;
-    gap: 40px;
-  }
-  .initiatives-title {
-    font-size: 2.8rem;
-    margin-bottom: 3.5rem;
-  }
-  .hospitality-container {
-    flex-direction: column;
-    gap: 50px;
-  }
-  .hospitality-content, .hospitality-image-box {
-    width: 100%;
-  }
-  .hospitality-image-box {
-    height: 380px;
-  }
-  .hospitality-content h2 {
-    font-size: 2.6rem;
-  }
-  .hospitality-amenities {
-    margin-top: 2rem;
-  }
-  .product-row {
-    flex-direction: column; 
-    gap: 25px;
-    padding: 40px 4%;
-    margin-bottom: 20px;
-  }
-  .product-row.reverse {
-    flex-direction: column-reverse; 
-    gap: 25px;
-  }
-  .product-graphic-box, .product-details {
-    width: 100%;
-  }
-  .product-graphic-box {
-    height: 320px;
-    margin-bottom: 5px;
-  }
-}
-
-@media (max-width: 768px) {
-  .esg-table-header { display: none; }
-  .esg-table-row { flex-direction: column; align-items: flex-start; gap: 15px; padding: 25px 0; }
-  .esg-table-row:hover { padding-left: 0; background-color: transparent; }
-  .esg-col.category-cell, .esg-col.indicator-cell, .esg-col.value-cell { flex: 0 0 100%; width: 100%; text-align: left; }
-  .esg-col.value-cell { text-align: left; border-top: 1px dashed rgba(74, 62, 61, 0.1); padding-top: 10px; }
-  .footer-container {
-    flex-direction: column;
-    text-align: left;
-    gap: 20px;
-  }
-  .footer-statement, .footer-copyright {
-    text-align: left;
-  }
-}
-
-/* Pulsante Back to Top */
+/* --- Back to top --- */
 .back-to-top {
   position: fixed;
   bottom: 35px;
@@ -988,4 +921,204 @@ h1 {
   background-color: #58181A;
   color: #FDFBF7;
   transform: translateY(-3px);
+}
+
+/* ==========================================
+   АДАПТИВНІСТЬ ДЛЯ СМАРТФОНІВ ТА ПЛАНШЕТІВ
+   ========================================== */
+
+@media (max-width: 991px) {
+  .main-header {
+    height: 70px;
+    padding: 0 5%;
+    background: rgba(253, 251, 247, 0.95) !important;
+    backdrop-filter: blur(8px) !important;
+    border-bottom: 1px solid rgba(74, 62, 61, 0.08) !important;
+  }
+  
+  .main-header .logo {
+    font-size: 1.1rem;
+    letter-spacing: 1.5px;
+  }
+
+  .nav-links a {
+    font-size: 0.68rem;
+    letter-spacing: 1px;
+    margin-left: 12px;
+  }
+
+  .lang-switch {
+    margin-left: 12px;
+    padding-left: 10px;
+  }
+
+  .hero-section {
+    flex-direction: column;
+    height: auto;
+    min-height: 100vh;
+    padding-top: 80px;
+  }
+
+  .hero-content {
+    width: 100%;
+    padding: 40px 6% 60px 6%;
+  }
+
+  h1 {
+    font-size: 2.6rem;
+    margin-bottom: 1.2rem;
+  }
+
+  .hero-subtitle {
+    font-size: 1.05rem;
+    margin-bottom: 2rem;
+  }
+
+  .hero-image {
+    width: 100%;
+    height: 350px;
+  }
+
+  .scroll-indicator {
+    display: none;
+  }
+
+  .about-section {
+    flex-direction: column-reverse;
+    height: auto;
+  }
+
+  .about-content, .about-image {
+    width: 100%;
+  }
+
+  .about-content {
+    padding: 60px 6%;
+  }
+
+  .about-content h2 {
+    font-size: 2.2rem;
+  }
+
+  .about-image {
+    height: 350px;
+    min-height: auto;
+  }
+
+  .initiatives-section {
+    padding: 70px 6%;
+  }
+
+  .initiatives-grid {
+    grid-template-columns: 1fr;
+    gap: 35px;
+  }
+
+  .initiatives-title {
+    font-size: 2.3rem;
+    margin-bottom: 3rem;
+  }
+
+  .hospitality-section {
+    padding: 60px 6%;
+  }
+
+  .hospitality-container {
+    flex-direction: column;
+    gap: 40px;
+  }
+
+  .hospitality-content, .hospitality-image-box {
+    width: 100%;
+  }
+
+  .hospitality-image-box {
+    height: 300px;
+  }
+
+  .hospitality-content h2 {
+    font-size: 2.2rem;
+  }
+
+  .products-section {
+    padding: 50px 6%;
+  }
+
+  .products-main-title {
+    font-size: 2rem;
+  }
+
+  .product-row {
+    flex-direction: column;
+    gap: 20px;
+    padding: 30px 4%;
+  }
+
+  .product-row.reverse {
+    flex-direction: column;
+  }
+
+  .product-graphic-box, .product-details {
+    width: 100%;
+  }
+
+  .product-graphic-box {
+    height: 220px;
+  }
+
+  .esg-section {
+    padding: 60px 6%;
+  }
+
+  .esg-main-title {
+    font-size: 2.2rem;
+  }
+
+  .esg-table-header {
+    display: none;
+  }
+
+  .esg-table-row {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 12px;
+    padding: 20px 0;
+  }
+
+  .esg-col.category-cell, .esg-col.indicator-cell, .esg-col.value-cell {
+    flex: 0 0 100%;
+    width: 100%;
+    text-align: left;
+  }
+
+  .esg-col.value-cell {
+    border-top: 1px dashed rgba(74, 62, 61, 0.1);
+    padding-top: 10px;
+  }
+
+  .footer-container {
+    flex-direction: column;
+    text-align: left;
+    gap: 25px;
+  }
+
+  .footer-statement, .footer-copyright {
+    text-align: left;
+  }
+}
+
+@media (max-width: 480px) {
+  .nav-links a {
+    font-size: 0.6rem;
+    margin-left: 8px;
+    letter-spacing: 0.5px;
+  }
+
+  .main-header .logo {
+    font-size: 0.95rem;
+  }
+
+  h1 {
+    font-size: 2.2rem;
+  }
 }

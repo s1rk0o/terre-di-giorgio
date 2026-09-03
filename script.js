@@ -223,6 +223,8 @@ document.addEventListener("DOMContentLoaded", function() {
     btnIT.onclick = function() { setLanguage('it'); };
   }
 
+  setLanguage('it');
+
   // ==========================================
   // 3. CAMBIO SFONDO HEADER ALLO SCROLL
   // ==========================================

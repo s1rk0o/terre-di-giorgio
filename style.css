@@ -906,7 +906,7 @@ h1 {
 .footer-copyright p {
   font-size: 0.8rem;
   color: #4A3E3D;
-  opacity: 0.8;
+  opacity: 1; 
   line-height: 1.6;
 }
 
@@ -920,7 +920,7 @@ h1 {
   font-family: 'Cormorant Garamond', serif;
   font-style: italic;
   font-size: 1.1rem;
-  color: #C5A059;
+  color: #8A6A2B; 
 }
 
 .footer-copyright {

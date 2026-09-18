@@ -108,6 +108,7 @@ body {
   line-height: 1;
   display: inline-block;
   user-select: none;
+  background: none; border: none; font: inherit; cursor: pointer;
 }
 
 .lang-btn.active {

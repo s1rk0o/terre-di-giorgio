@@ -112,7 +112,7 @@ body {
   letter-spacing: 1px;
   color: #4A3E3D;
   cursor: pointer;
-  opacity: 0.4;
+  opacity: 0.75;
   transition: all 0.3s ease;
   line-height: 1;
   display: inline-block;
@@ -132,6 +132,13 @@ body {
 .lang-btn:hover {
   opacity: 1;
   color: #58181A;
+}
+
+/* Stile per navigazione da tastiera accessibile (WCAG 2.1) */
+.lang-btn:focus-visible {
+  outline: 2px solid #58181A;
+  outline-offset: 3px;
+  border-radius: 2px;
 }
 
 .lang-divider {
@@ -1152,9 +1159,3 @@ h1 {
   }
 }
 
-/* Stile per navigazione da tastiera accessibile (WCAG 2.1) */
-.lang-btn:focus-visible {
-  outline: 2px solid #58181A;
-  outline-offset: 3px;
-  border-radius: 2px;
-}

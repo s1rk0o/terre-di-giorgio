@@ -208,12 +208,15 @@ document.addEventListener("DOMContentLoaded", function() {
     document.querySelectorAll('[data-i18n]').forEach(element => {
       const key = element.getAttribute('data-i18n');
       if (translations[lang] && translations[lang][key]) {
+        const val = translations[lang][key];
         if (element.querySelector('.drop-cap')) {
-          const dropChar = translations[lang][key].charAt(0);
-          const restText = translations[lang][key].slice(1);
+          const dropChar = val.charAt(0);
+          const restText = val.slice(1);
           element.innerHTML = `<span class="drop-cap">${dropChar}</span>${restText}`;
+        } else if (typeof val === 'string' && val.includes('<span')) {
+          element.innerHTML = val;
         } else {
-          element.textContent = translations[lang][key];
+          element.textContent = val;
         }
       }
     });

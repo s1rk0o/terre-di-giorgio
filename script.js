@@ -196,6 +196,7 @@ document.addEventListener("DOMContentLoaded", function() {
   const btnIT = document.getElementById('lang-it');
 
   function setLanguage(lang) {
+    document.documentElement.lang = lang;
     if (lang === 'it') {
       btnIT.classList.add('active');
       btnEN.classList.remove('active');
@@ -212,7 +213,7 @@ document.addEventListener("DOMContentLoaded", function() {
           const restText = translations[lang][key].slice(1);
           element.innerHTML = `<span class="drop-cap">${dropChar}</span>${restText}`;
         } else {
-          element.innerHTML = translations[lang][key];
+          element.textContent = translations[lang][key];
         }
       }
     });

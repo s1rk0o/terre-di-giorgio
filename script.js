@@ -213,7 +213,7 @@ document.addEventListener("DOMContentLoaded", function() {
           const dropChar = val.charAt(0);
           const restText = val.slice(1);
           element.innerHTML = `<span class="drop-cap">${dropChar}</span>${restText}`;
-        } else if (typeof val === 'string' && val.includes('<span')) {
+        } else if (typeof val === 'string' && (val.includes('<span') || val.includes('<strong'))) {
           element.innerHTML = val;
         } else {
           element.textContent = val;
